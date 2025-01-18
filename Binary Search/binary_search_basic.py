@@ -2,7 +2,7 @@ import time
 def binary_search(lst, guess):
     low, high = 0, len(lst) - 1
 
-    while low < high:
+    while low <= high:
         mid = (low + high ) // 2
         if guess == lst[mid]:
             return mid
